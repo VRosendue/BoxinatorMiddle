@@ -7,6 +7,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 //https://stackoverflow.com/questions/70036953/spring-boot-2-6-0-spring-fox-3-failed-to-start-bean-documentationpluginsboo
 @EnableWebMvc
 @SpringBootApplication
+@PropertySource("classpath:application-${spring.profiles.active:default}.properties")
 public class BoxinatorVimApplication {
 
 	public static void main(String[] args) {
