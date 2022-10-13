@@ -29,10 +29,6 @@ public class Country {
 	@Column(nullable = false)
 	private int countryCode;
 
-	public Country() {
-
-	}
-
 	public Long getCountryId() {
 		return countryId;
 	}
